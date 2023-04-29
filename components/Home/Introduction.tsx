@@ -8,7 +8,7 @@ const Introduction = () => {
         <div className="grid grid-flow-row gap-y-8">
           <Title />
           <p className="text-xl text-zinc-100">
-            Hi, I'm Thomas Tam, A Front-End and Back-End lover.
+            Hi, I'm Thomas, A Front-End and Back-End lover.
           </p>
         </div>
       </div>
