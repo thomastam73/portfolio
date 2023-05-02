@@ -1,18 +1,21 @@
 import React from "react";
+import ComputersCanvas from "./ComputersCanvas";
 
 const Introduction = () => {
   return (
-    <div className="flex">
-      <div className="flex-3">
-        <div className="grid grid-flow-row gap-y-8">
-          <Title />
-          <p className="text-xl text-zinc-100">
-            {"Hi, I'm Thomas, A Front-End and Back-End lover."}
-          </p>
+    <section className={`relative mx-auto h-screen w-full`}>
+      <div className="absolute flex">
+        <div className="flex-3">
+          <div className="grid grid-flow-row gap-y-8">
+            <Title />
+            <p className="text-xl text-zinc-100">
+              {"Hi, I'm Thomas, A Front-End and Back-End lover."}
+            </p>
+          </div>
         </div>
       </div>
-      <div className="flex-1"></div>
-    </div>
+      <ComputersCanvas />
+    </section>
   );
 };
 

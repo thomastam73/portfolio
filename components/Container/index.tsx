@@ -6,9 +6,9 @@ type ContainerProps = ChildrenType;
 
 const Container = ({ children }: ContainerProps) => {
   return (
-    <div>
+    <div className="h-[100vh]">
       <Navbar />
-      <div className="container p-28">{children}</div>
+      <div className="p-28">{children}</div>
     </div>
   );
 };
