@@ -7,7 +7,7 @@ const Introduction = () => {
       <div className="absolute flex">
         <div className="flex-3">
           <div className="grid grid-flow-row gap-y-8">
-            <Title />
+            <Title>Full Stack Developer</Title>
             <p className="text-xl text-zinc-100">
               {"Hi, I'm Thomas, A Front-End and Back-End lover."}
             </p>
@@ -19,14 +19,14 @@ const Introduction = () => {
   );
 };
 
-const Title = () => {
+const Title = ({ children }: { children: string }) => {
   return (
     <p
       className="animate-text bg-gradient-to-r from-orange-500 via-yellow-500 to-red-400
     bg-clip-text text-5xl font-bold text-transparent 
     drop-shadow-[6px_6px_4px_rgba(253,186,116,0.5)]"
     >
-      Full Stack Developer
+      {children}
     </p>
   );
 };
